@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7d86513779.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/logo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+                <i class="fa-solid fa-xmark"></i>
+            </ul>
+            <i class="fa-solid fa-bars"></i>
+        </nav>
+        <div class="header-text">
+            <p>Web Designer</p>
+            <h1>Hi, I'm <span>Yash</span><br>Chakerverti</h1>
+        </div>
+    </div>
+</div>
+<!-- ----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/user.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> As a third-year Electronics Engineering student, I'm passionate about exploring the fascinating world of technology and its applications.
+                    I'm committed to honing my skills in electronics and electrical systems, and I'm eager to contribute to innovative solutions in this dynamic field.
+                    I am always on the lookout for opportunities to learn, grow, and collaborate with like-minded individuals.
+                    I am enthusiastic about learning, open to new opportunities, and eager to connect with professionals, mentors, and fellow students who share my interests.
+                    My goal is to gain valuable insights, expand my knowledge, and work towards building a successful career.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Desigining Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                            <li><span>Embedded Systems Design</span><br>Designing hardware-software interfaces</li>
+                            <li><span>Technical Tools</span><br>Arduino IDE, MATLAB, XILINX</li>
+                        </ul>
+                    </div><div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Dec'23-Feb'24</span><br>Intern at lvl Alpha as EEE System Design Associate</li>
+                        </ul>
+                    </div><div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-2026</span><br>B.Tech(ECE) from ABES Engineering College</li>
+                            <li><span>2022</span><br>12th from Ch. Chhabil Dass Public School</li>
+                        </ul>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -------services--------- -->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Description</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/Ux Design</h2>
+                <p>Description</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Description</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+ </div>
+<!-- ---------portfolio---------- -->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/work-1.jpg">
+                <div class="layer">
+                    <h3>OTT App</h3>
+                    <p>Description</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+            <div class="work">
+                <img src="Images/work-2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>Description</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                
+            </div>
+            <div class="work">
+                <img src="Images/work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>Description</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+ </div>
+<!-- -------------contact------------- -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>yashchakerverti@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>09599756845</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/yash-chakerverti-109393258/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/_yash.2610/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/Yash382863"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <a href="Images/RESUME.pdf" download class="btn">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Yash <i class="fa-solid fa-heart"></i>.</p>
+    </div>
+ </div>
+
+<script>
+    
+    function opentab(tabname) {
+   
+   var tablinks = document.getElementsByClassName("tab-links");
+   for (var i = 0; i < tablinks.length; i++) {
+       tablinks[i].classList.remove("active-link");
+   }
+
+  
+   var tabcontents = document.getElementsByClassName("tab-contents");
+   for (var i = 0; i < tabcontents.length; i++) {
+       tabcontents[i].classList.remove("active-tab");
+   }
+
+  
+   event.currentTarget.classList.add("active-link");
+
+   
+   document.getElementById(tabname).classList.add("active-tab");
+}
+
+</script>
+</body>
+</html>
