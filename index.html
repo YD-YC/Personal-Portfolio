@@ -12,15 +12,15 @@
     <div class="container">
         <nav>
             <img src="Images/logo.png" class="logo">
-            <ul>
+            <ul id="sidemenu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Contact</a></li>
-                <i class="fa-solid fa-xmark"></i>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
             <p>Web Designer</p>
@@ -37,11 +37,10 @@
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
-                <p> As a third-year Electronics Engineering student, I'm passionate about exploring the fascinating world of technology and its applications.
-                    I'm committed to honing my skills in electronics and electrical systems, and I'm eager to contribute to innovative solutions in this dynamic field.
-                    I am always on the lookout for opportunities to learn, grow, and collaborate with like-minded individuals.
-                    I am enthusiastic about learning, open to new opportunities, and eager to connect with professionals, mentors, and fellow students who share my interests.
-                    My goal is to gain valuable insights, expand my knowledge, and work towards building a successful career.</p>
+                <p> As a third-year Electronics Engineering student, I am passionate about technology and its transformative applications.
+                    With experience in UI/UX design, web and app development, embedded systems, and proficiency in tools like MATLAB and Xilinx,
+                    I bring a multidisciplinary approach to innovation.
+                    I strive to learn, collaborate, and build a successful career in electronics and technology.</p>
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -72,32 +71,6 @@
     </div>
 </div>
 
-<!-- -------services--------- -->
- <div id="services">
-    <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Web Design</h2>
-                <p>Description</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-crop"></i>
-                <h2>UI/Ux Design</h2>
-                <p>Description</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-brands fa-app-store"></i>
-                <h2>App Design</h2>
-                <p>Description</p>
-                <a href="#">Learn more</a>
-            </div>
-        </div>
-    </div>
- </div>
 <!-- ---------portfolio---------- -->
  <div id="portfolio">
     <div class="container">
@@ -185,6 +158,18 @@
    document.getElementById(tabname).classList.add("active-tab");
 }
 a
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.left = "-200px";
+    }
 
 </script>
 </body>
